@@ -20,7 +20,6 @@ public class CountriesTextFile extends Country {
 
 	public static Path filePath = Paths.get("countries.txt");
 
-	// making sure file is there or else creating it
 
 	public static void fileExist(String item) throws IOException {
 		if (Files.notExists(filePath)) {
@@ -28,7 +27,6 @@ public class CountriesTextFile extends Country {
 		}
 	}
 
-	// reading the items into a list
 
 	public static List<Country> readFile() {
 
@@ -52,7 +50,7 @@ public class CountriesTextFile extends Country {
 		}
 	}
 
-	// adding to the end of a list
+	
 
 	public static void addToEndOfFile(Country countries) throws IOException {
 		if (Files.notExists(filePath)) {

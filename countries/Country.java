@@ -6,8 +6,9 @@ public class Country {
 	private double population;
 
 	
-public Country() {}
-
+public Country() {
+	super();
+}
 
 public Country(String name, double population) {
 	super();
@@ -35,8 +36,11 @@ public void setPopulation(double population) {
 	this.population = population;
 }
 	
-	
+@Override
+public String toString() {
+	return "Country [name=" + name + ", populations=" + population + "]";
 
+}
 }
 		
 		
